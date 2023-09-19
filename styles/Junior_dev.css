@@ -3,8 +3,8 @@
     scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion:no-preference){
-    *{
+@media (prefers-reduced-motion:no-preference) {
+    * {
         scroll-behavior: smooth;
     }
 }
@@ -14,8 +14,8 @@
 body {
     margin: 0;
     padding: 0;
-    background: url(../images/doodle-glowing-artwork-vhu5ts3hs8bxyq5a.jpg);
-    background-size:contain;
+    background: linear-gradient(rgba(0,0,0, 0.5), rgba(0,0,0,0.5)), url(../images/doodle-glowing-artwork-vhu5ts3hs8bxyq5a.jpg);
+    background-size: contain;
     background-repeat: repeat-y;
 }
 
@@ -28,10 +28,10 @@ body {
 
 }
 
-.sticky{
-    position:fixed;
-    top:0;
-    width:100%;
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
     z-index: 3;
     backdrop-filter: blur(60%);
 }
@@ -41,7 +41,7 @@ body {
     flex-direction: column;
     align-content: center;
     margin: 0 auto;
-    padding:10px;
+    padding: 10px;
 }
 
 .italics {
@@ -59,9 +59,10 @@ body {
     display: flex;
     justify-content: space-evenly;
     color: whitesmoke;
-    margin-top:2px;
+    margin-top: 2px;
     margin-bottom: 0;
     padding: 0;
+    list-style: none;
 }
 
 ul>li {
@@ -83,7 +84,7 @@ main {
 
 .presentation {
     width: 95vw;
-    height: 75vh;
+    height: 70vh;
     margin-top: 10px;
     margin-bottom: 0;
     padding-top: 20px;
@@ -111,13 +112,12 @@ main {
     bottom: 10px;
     padding: 20px;
     padding-bottom: 10px;
-    backdrop-filter: blur(5px);
 }
 
 .pres-h1 {
     color: whitesmoke;
     margin: 0 0 auto auto;
-    width:100%;
+    width: 100%;
     text-align: center;
     font-size: 1.7rem;
     font-family: cursive;
@@ -144,34 +144,37 @@ main {
 }
 
 .description {
-    text-align:center;
+    align-content: center;
+    text-align: center;
     justify-content: center;
-    font-size: calc(0.5em + 1vw);
-    font-family:serif;
+    font-size: calc(0.3em + 1vw);
+    font-family:'Courier New', Courier, monospace;
     font-weight: 100;
     padding-right: 2.5px;
     color: whitesmoke;
-    width:100%;
+    width: 100%;
 }
 
 @media screen and (min-width: 1020px) {
-    .description, .sec-p{
+
+    .description,
+    .sec-p {
         font-size: 1.4vw;
     }
 }
 
 .pres-box-img {
     height: 100%;
-    width:auto;
+    width: auto;
     max-width: 100%;
     margin: 0;
     padding: 10px;
-    object-fit:cover;
+    object-fit: cover;
 }
 
 .img-span {
-    width:50%;
-    margin:0 auto;
+    width: 50%;
+    margin: 0 auto;
     image-rendering: optimizeQuality;
     image-rendering: optimizeSpeed;
 }
@@ -183,6 +186,7 @@ main {
     width: 75%;
     box-shadow: none;
 }
+
 .separetor-last {
     margin: 20px auto;
     padding: 0;
@@ -194,30 +198,57 @@ main {
 
 
 .photos {
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    max-width:100%;
-    padding:0 10px;
-    gap:16px;
+    max-width: 100%;
+    padding: 0 10px;
+    gap: 16px;
 }
 
 
 .photo-cards {
     display: flex;
     flex-direction: column;
-    object-fit:cover;
+    object-fit: cover;
     margin: 0;
-    padding:0;
-    width:25%;
-    height:100%;
+    padding: 0;
+    width: 25%;
+    height: 100%;
 }
 
 .image {
-    width:100%;
-    height:60%;
+    width: 100%;
+    height: 60%;
     object-fit: cover;
+}
+
+
+.button {
+    width: 20vw;
+    height: 40px;
+    display: flex;
+    margin: 0 auto;
+    align-content: center;
+    justify-content: center;
+    background: transparent;
+    box-shadow: none;
+    border: 2px solid #6899a0;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.button a {
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    text-decoration: none;
+    color: #dfeceb;
+    font-family: verdana;
+    font-size:clac(1.5em, 1vw);
 }
 
 .topic {
@@ -247,46 +278,53 @@ main {
 
 
 .disc-head {
-    width:100%;
-    margin:0 auto;
+    width: 100%;
+    margin: 0 auto;
     text-align: center;
-    padding:0;
+    padding: 0;
 }
 
 .sec-h1 {
     color: whitesmoke;
     margin: 0 auto;
-    width:100%;
+    width: 100%;
     text-align: center;
     font-size: 1.7rem;
     font-family: cursive;
 
 }
 
-.photo-cards .sec-p, .disc-head .sec-p {
+
+
+
+.sec-p{
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 10px 0 10px;
     color: whitesmoke;
     text-align: center;
     justify-content: center;
-    font-size: clac(0.5em + 1vw);
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: clac(0.2em + 1vw);
+    font-family: Verdana;
+    font-weight: 100;
 }
 
 .embed-music {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    max-width:100%;
-    gap:14px;
-    margin:0 auto;
+    max-width: 100%;
+    gap: 14px;
+    margin: 0 auto;
     align-items: center;
     justify-content: center;
 }
 
 footer {
-    background-color:#2F4F4F;
+    background-color: #2F4F4F;
     display: flex;
     color: whitesmoke;
-    justify-content: center;
+    justify-content: space-evenly;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 
@@ -294,7 +332,9 @@ footer {
 
 .foot-address {
     text-align: center;
-    padding:0.3em;
+    margin: 10px auto;
+    font-family: verdana;
+    font-size: calc(1.5em, 1vw) ;
 
 }
 
